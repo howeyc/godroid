@@ -7,18 +7,6 @@ See the original great work by [MarinX](https://github.com/MarinX/godroid)
 
 ### QUICK TUTORIAL
 
-#### Get the Golang 1.4 beta, go to into src dir and type: 
-
-```
-	CC_FOR_TARGET=$NDK_ROOT/bin/arm-linux-androideabi-gcc GOOS=android GOARCH=arm GOARM=7 ./make.bash
-```
-
-Install gobind
-
-```
-	go get code.google.com/go.mobile/cmd/gobind
-```
-
 #### Download the Android Stuff
 
 * [NDK](https://developer.android.com/tools/sdk/ndk/index.html)
@@ -41,6 +29,18 @@ Install gobind
 	./android update sdk --no-ui --all --filter 107
 	./android update sdk --no-ui --all --filter 20
 	./android update sdk --no-ui --all --filter 7
+```
+
+#### Get the Golang 1.4 beta, go to into src dir and type: 
+
+```
+	CC_FOR_TARGET=$NDK_ROOT/bin/arm-linux-androideabi-gcc GOOS=android GOARCH=arm GOARM=7 ./make.bash
+```
+
+Install gobind
+
+```
+	go get code.google.com/go.mobile/cmd/gobind
 ```
 
 #### Build
