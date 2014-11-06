@@ -3,9 +3,6 @@ godroid
 
 Android Webview + Go 1.4 net/http server.
 
-Thanks for support:
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-GoDroid-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1075)
-
 ###QUICK TUTORIAL
 
 1. Get the Golang 1.4 beta, go to into src dir and type: 
