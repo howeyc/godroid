@@ -5,7 +5,7 @@ android_studio_app/GoDroid/app/build/outputs/apk/app-debug.apk: android_studio_a
 	cd android_studio_app/GoDroid/ && ./gradlew assembleDebug
 
 android_so_lib/libgojni.so: android_so_lib/main.go go_godroid/go_godroid.go
-	cd android_so_lib && CGO_ENABLED=1 GOOS=android GOARCH=arm go build -o libgojni.so -ldflags="-shared"
+	cd android_so_lib && CC=${NDK_ROOT}/arm-linux-androideabi/bin/gcc CGO_ENABLED=1 GOOS=android GOARCH=arm go build -o libgojni.so -ldflags="-shared"
 
 android_studio_app/GoDroid/app/src/main/jniLibs/armeabi-v7a/libgojni.so: android_so_lib/libgojni.so
 	mkdir -p android_studio_app/GoDroid/app/src/main/jniLibs/armeabi-v7a
